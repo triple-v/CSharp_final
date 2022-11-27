@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine();
+Console.WriteLine("Введите размер массива (целое положительное число):");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+if (size <= 0)
+{
+  Console.WriteLine($"Введено недопустимое число.");
+}
