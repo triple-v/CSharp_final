@@ -23,5 +23,15 @@ else
       Console.WriteLine();
     }
   }
+  void PrintArray(string[] array2)
+  {
+    for (int i = 0; i < array2.Length; i++)
+    {
+      if (array2[i].Length <= 3)
+        Console.Write($"{array2[i]} ");
+    }
+    Console.WriteLine();
+  }
   CreationArray(array1);
+  PrintArray(array1);
 }
